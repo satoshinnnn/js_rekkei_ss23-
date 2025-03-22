@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script >
+    //   mảng chứa 5 phần tưt là số nguyên 
+    //   tính tổng số lẻ và hiển thị kết quả
+    // tính tổng số chẵn và hiện thị kết quả
+    let arr = [2,3,5,6,1];
+    let sumEven = 0; 
+    let sumOdd = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (i%2===0) {
+            sumEven+=arr[i];
+        }
+        else {
+            sumOdd+=arr[i];
+        }
+    }
+    console.log("Sum evens ", sumEven);
+    console.log("Sum odds ", sumOdd);
+    </script>
+</body>
+</html>

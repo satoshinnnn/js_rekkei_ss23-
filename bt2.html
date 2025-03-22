@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let getNumber = +prompt("Mời bạn nhập vào một số");
+        numbers = [0,3,5,7,9];
+        isFalse = true;
+        for (let number of numbers) {
+            if(getNumber===number) {
+                console.log("Bingo");
+                isFalse = false;
+                break;
+            }
+        }
+        if (isFalse) {
+            console.log("Chúc bạn may mắn lần sau");
+        }
+    </script>
+</body>
+</html>

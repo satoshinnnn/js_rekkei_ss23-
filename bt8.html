@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // mảng 10 số nguyen q
+    // tìm số có số lần xuát hiện lớn hơn 1 sau đó ngay lập tức add vào một mảng rỗng
+    // mảng rỗng sau khi chứa các số trùng nhau sẽ thực hiện sort để sắp xếp tăng dân --> sau đó in rr
+    // phần tử có số lần xuất hiện nhiều nhất (chọn phần tử có giá trị nhỏ nhất)
+    let arr = [1,4,2,6,8,5,7,9,9,1];
+    let appearMore1 = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0 ; j < arr.length ; j++) {
+            if(arr[j]===arr[j+1]) {
+                arr.splice(j,j+1);
+            }
+        }
+    }
+    console.log(arr);
+     </script>
+</body>
+</html>

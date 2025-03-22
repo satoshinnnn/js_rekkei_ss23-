@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giải nghiệm phương trình bậc 2</title>
+</head>
+<body>
+    <script>
+        // nhập
+        // đổi sang array
+        // tìm phần tử có giá trị lớn nhất -> in ra màn hình 
+        let input = prompt("Mời nhập vào một số");
+        let inputArr = input.split("").map(Number);
+
+        let max = inputArr[0];
+        for (let i = 1; i < inputArr.length; ++i) {
+            if (inputArr[i] > max) {
+                max = testArr[i];
+            }
+        }
+        console.log(max);
+        
+    </script>
+</body>
+</html>

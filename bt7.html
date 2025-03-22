@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <script>
+    // tạo mảng chứa 10 phần tử là số nguyên 
+    // thực hiện xắp xếp các phần tử trong mảng theo thứ tự tăng dần 
+    // vòng j giúp đưa số lớn nhất về cuối mảng sau mỗi lần được thực hiện 
+    // <-- vòng i giúp vòng j được thực hiện n lần (tương đương với n phần tử có trong mảng)
+        let arr = [9,8,7,6,5,4,3,2,1,4,];
+        for (let i = 0; i < arr.length ; i++) {
+            for (let j = 0 ; j < arr.length - 1 - i; j++) {
+                if (arr[j] > arr[j+1]) {
+                    [arr[j], arr[j+1]] = [arr[j+1], arr[j]];
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+  
+</body>
+</html>
